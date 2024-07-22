@@ -1,16 +1,17 @@
+from django.shortcuts import render
 from django.http import HttpResponse
 
 def inicio(request):
-    return HttpResponse("Vista inicio")
+    return render(request, "AppKyle/index.html")
 
 def cursos(request):
-    return HttpResponse("Vista cursos")
+    return render(request, "AppKyle/cursos.html")
 
 def profesores(request):
-    return HttpResponse("Vista profesores")
+    return render(request, "AppKyle/profesores.html")
 
 def estudiantes(request):
-    return HttpResponse("Vista estudiantes")
+    return render(request, "AppKyle/estudiantes.html")
 
 def entregables(request):
-    return HttpResponse("Vista entregables")
+    return render(request, "AppKyle/entregables.html")
